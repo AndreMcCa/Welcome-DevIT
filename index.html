@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DevIT</title>
+  </head>
+  <body>
+    <main>
+      <h1>=== GIT внесение изменений ===</h1>
+      <p><strong>Рабочее окружение</strong></p>
+      <p>Вы уже работаете на ветке task_4 родительская ветка которой dev.</p>
+
+      <p><strong>Задание</strong></p>
+      <p>
+        На ветке dev удаленного репозитория появились новые изменения и ваша
+        задача добавить их в свою ветку перед своими, опишите порядок ваших
+        действий.
+      </p>
+      <div>
+        <p>
+          Мы находимся в ветке task_4. Для того, чтобы стянуть последние
+          изменения, нужно перейти в ветку <i>dev</i> с помощью команды
+          <strong>git checkout dev</strong> и выполнить команду
+          <strong>git pull</strong>. После снова вернуться в ветку
+          <i>task_4</i> командой <strong>git checkout task_4</strong> и
+          синхронизируемся с веткой <i>dev</i>, при помощи комманды
+          <strong>git merge dev</strong>
+        </p>
+        <img src="./img/git_1.jpg" alt="пример" width="1000" />
+      </div>
+      <div>
+        <p>Результат</p>
+        <img src="./img/git_2.jpg" alt="пример" width="1000" />
+      </div>
+      <div>
+        <p>
+          Если ветка <i>dev</i> только моя и над ней работаем только я, тогда
+          можно использовать команду <strong>git rebase dev</strong>
+        </p>
+        <img src="./img/git_3.jpg" alt="пример" width="1000" />
+      </div>
+      <div>
+        <p>
+          ...после перейти в ветку <i>dev</i> =>
+          <strong>git checkout dev</strong>, и выполнить
+          <strong>git rebase task_4</strong>. <br />
+          Результат
+        </p>
+        <img src="./img/git_4.jpg" alt="пример" width="1000" />
+      </div>
+    </main>
+
+    <script src="./js/task_1.js" type="module"></script>
+    <script src="./js/task_2.js" type="module"></script>
+    <script src="./js/task_3.js" type="module"></script>
+    <script src="./js/task_4.js" type="module"></script>
+    <script src="./js/task_5.js" type="module"></script>
+    <script src="./js/task_6.js" type="module"></script>
+  </body>
+</html>
